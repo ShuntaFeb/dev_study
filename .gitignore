@@ -1,0 +1,25 @@
+# --- システム・エディタ設定 ---
+.DS_Store
+.vscode/
+*.swp
+
+# --- C/C++ の不要ファイル ---
+*.exe
+*.o
+*.obj
+*.dll
+*.out
+
+# --- Rust の不要ファイル ---
+/03_rust/**/target/
+Cargo.lock
+
+# --- 組み込み・秘密情報 ---
+# Wi-Fiパスワードなどが書かれたヘッダファイルは除外するルールを決める
+secrets.h
+wifi_config.h
+*.env
+
+# --- ★最重要：資料フォルダを除外 ---
+99_resources/books/
+99_resources/paid_materials/
