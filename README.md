@@ -1,26 +1,37 @@
 # dev_study 💻
 
-プログラミング言語（C, C++, Rust, Python）の学習と、将来的なAI研究（音声合成など）のための統合開発環境です。
-VS Code Dev Containers (Docker) を使用し、Windows上に汚染のないクリーンなLinux開発環境を構築しています。
+VS Code Dev Containers を利用した、C/C++, Rust, Python の統合学習環境
+Windows上にクリーンなLinux環境を構築し、GPUを活用したAI開発まで対応
 
-## 🚀 環境の特徴
+## 🚀 環境スペック
 
-* **完全なLinux環境**: Windows上で、DebianベースのLinux環境をDockerコンテナとして稼働。
-* **マルチ言語対応**:
-    * **C / C++**: GCCコンパイラ環境完備。
-    * **Rust**: Cargoを含む最新のRustツールチェーン完備。
-* **GPUアクセラレーション対応**:
-    * NVIDIA GeForce RTX 4050 をコンテナ内にパススルー設定済み。
-    * `nvidia-smi` での認識を確認済み。
-    * Python (PyTorch) などのAI学習をGPUで実行可能。
+* **OS**: Linux (Debian) on Docker
+* **Languages**: C, C++, Rust, Python
 
-## 📂 ディレクトリ構成
+## 📂 ディレクトリと学習内容
 
-```text
-dev_study/
-├── .devcontainer/    # Docker設定ファイル (GPU設定、拡張機能など)
-├── 01_c/             # C言語学習用
-├── 02_cpp/           # C++言語学習用
-├── 03_rust/          # Rust学習用
-├── 04_python/        # Python/AI実験用
-└── README.md         # 本ファイル
+各ディレクトリの用途は以下の通り
+
+### `01_c/`
+* **C言語の基礎学習**
+* メモリ管理（ポインタ、malloc/free）の理解
+* Linuxシステムコールや低レイヤの挙動確認
+
+### `02_cpp/`
+* **C++の基礎学習**
+* オブジェクト指向プログラミング (OOP) の理解
+* STL (Standard Template Library) の活用
+
+### `03_rust/`
+* **Rustの習得**
+* 所有権システムとメモリ安全性の学習
+* 最新のシステムプログラミング手法の実践
+* Cargoを使ったプロジェクト管理
+
+### `04_python/`
+* **AI・深層学習の研究**
+* GPU (CUDA) を活用したPyTorchでの学習・推論
+* 音声信号処理や実験用スクリプトの作成
+
+---
+*Created: 2026-01-31*
