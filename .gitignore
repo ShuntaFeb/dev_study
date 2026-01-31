@@ -23,3 +23,9 @@ wifi_config.h
 # --- ★最重要：資料フォルダを除外 ---
 99_resources/books/
 99_resources/paid_materials/
+
+# ビルド生成物を無視
+build/
+*.exe
+*.o
+*.out
